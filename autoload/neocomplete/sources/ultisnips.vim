@@ -42,7 +42,7 @@ endfunction"}}}
 
 function! s:source.gather_candidates(context) "{{{
   "return values(neosnippet#get_snippets())
-  return keys(UltiSnips_SnippetsInCurrentScope())
+  return keys(UltiSnips#SnippetsInCurrentScope())
 endfunction"}}}
 
 function! s:source.hooks.on_post_filter(context) "{{{
